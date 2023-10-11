@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Simplest possible examples of HTML, CSS and JavaScript."
+    />
+    <meta name="author" content="//samdutton.com" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      itemprop="name"
+      content="simpl.info: simplest possible examples of HTML, CSS and JavaScript"
+    />
+    <meta itemprop="image" content="/images/icons/icon192.png" />
+    <meta id="theme-color" name="theme-color" content="#fff" />
+
+    <base target="_blank" />
+
+    <title>Image Capture</title>
+
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <div>
+        <button id="grabFrame">Grab Frame</button>
+        <button id="takePhoto">Take Photo</button>
+        <div class="select">
+          <label for="videoSource">Video source: </label
+          ><select id="videoSource"></select>
+        </div>
+        <input class="hidden" id="zoom" type="range" step="20" />
+      </div>
+
+      <video autoplay playsinline class="hidden"></video>
+      <img />
+      <canvas class="hidden"></canvas>
+
+      <a
+        href="https://github.com/samdutton/simpl/blob/gh-pages/imagecapture"
+        title="View source for this page on GitHub"
+        id="viewSource"
+        >View source on GitHub</a
+      >
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
